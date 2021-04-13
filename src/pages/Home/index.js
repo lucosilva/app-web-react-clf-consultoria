@@ -1,10 +1,11 @@
 import React from  'react';
+import Menu from '../../components/Menu';
 
 function Home(){
     return (
-        <h1>
-            homeee
-        </h1>
+        <div>
+            <Menu />
+        </div>
     )
 }
 
