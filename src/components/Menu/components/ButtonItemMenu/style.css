@@ -1,0 +1,41 @@
+header nav ul li{
+    list-style: none;
+    margin-left: 65px;
+    cursor: pointer;
+}
+
+header nav ul li:hover span {
+    color: var(--color1);
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color3);
+}
+
+header nav ul li:hover a {
+    color: var(--color1);
+}
+
+header nav ul li span,
+header nav ul li svg {    
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color3);
+}
+
+header nav ul li svg{
+    margin-left: 5px;
+}
+
+@media (max-width: 1200px) and (min-width: 992px){
+    header nav ul li{
+        margin-left: 45px;
+    }
+    header nav ul li span,
+    header nav ul li svg {    
+        font-size: 14px;
+    }
+}

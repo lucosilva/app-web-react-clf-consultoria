@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
-import { Link } from 'react-router-dom';
+import OptionMenu from '../OptionMenu';
 
-function ButtonItemMenu() {
+import { FiChevronDown } from "react-icons/fi";
+
+function ButtonItemMenu(props) {
+
     return (
-        <li>
-            
-        </li>
+        <li onClick={props.onClick}>
+            {props.icon === 'active' ? <span>{props.titulo} <FiChevronDown /></span> : <a href={props.url}>{props.titulo}</a>}
+            {props.icon === 'active' ? <OptionMenu idMenu={props.idMenu} listItem={props.children} /> : null}
+        </li>        
     )
 }
 
