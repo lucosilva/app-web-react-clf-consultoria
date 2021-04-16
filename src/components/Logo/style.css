@@ -1,6 +1,6 @@
 .logo{
     text-decoration: none;
-    /* transition: ease-out .3s; */
+    overflow: hidden;
 }
 .logo .text{
     color: #000;
@@ -20,19 +20,39 @@
     margin-right: 5px;
 }
 
-@keyframes fadeOutLeft {
-    from {
+
+@keyframes bounceOutLeft {
+    0%{opacity: 1;}
+
+    20% {
       opacity: 1;
+      -webkit-transform: translate3d(20px, 0, 0) scaleX(0.9);
+      transform: translate3d(20px, 0, 0) scaleX(0.9);
     }
   
     to {
+      -webkit-transform: translate3d(-2000px, 0, 0) scaleX(2);
+      transform: translate3d(-2000px, 0, 0) scaleX(2);
       opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
     }
- }
-.animate__fadeOutLeft {
-    -webkit-animation-name: fadeOutLeft;
-    animation-name: fadeOutLeft;
-}
+  }
+  .animate__bounceOutLeft {
+    -webkit-animation-name: bounceOutLeft;
+    animation: bounceOutLeft 3s;
+    opacity: 0; 
+  }
 
+
+  @media (max-width: 1200px) and (min-width: 992px){
+    .logo .text{
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 576px){
+      .logo .text{
+        width: 50%;        
+        font-size: 10px;
+        font-weight: 300;
+    }
+  }

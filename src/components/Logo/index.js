@@ -10,9 +10,9 @@ function Logo(props) {
         <Link className={props.classe} to={props.link}>
             <img src={logoImg} alt="Logo" />
 
-            <p className={props.animate + classText} >
-                {props.children}
-            </p>
+            <span className={props.animate + classText} >
+                {props.titulo}
+            </span>
         </Link>
     )
 }
