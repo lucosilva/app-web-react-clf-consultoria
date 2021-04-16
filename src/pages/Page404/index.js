@@ -1,10 +1,15 @@
-import React from  'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Page404(){
+function Page404() {
     return (
-        <h1>
-            404 pagina não encontrada!
-        </h1>
+        <>
+            <h1>Pagina Não Encontrada!!</h1>
+            <p>Volte para a home</p>
+            <Link to="/">
+                ir para Home
+            </Link>
+        </>
     )
 }
 
