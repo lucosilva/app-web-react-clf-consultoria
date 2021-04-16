@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function ButtonContrate(props) {    
     return (
         <Link className={props.classe} to={props.link}>        
-            {props.children}
+            {props.titulo}
         </Link>
     )
 }
