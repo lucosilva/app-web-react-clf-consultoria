@@ -1,0 +1,59 @@
+.bannerLTree{
+    width: 100%;
+    max-width: 1920px;
+    height: 392px;
+
+    background: linear-gradient(to right, var(--color2) 100%, #fff 0%);
+}
+
+.bannerLTree .container{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+
+    height: inherit;
+
+    z-index: 1;
+}
+
+.bannerLTree .container .context{
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto 0 40px 0;
+}
+
+.bannerLTree .container .context h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    color: var(--color5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bannerLTree .container .context p{
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--color3);
+    text-align: center;
+
+}
+
+@media (max-width: 767px){
+    .bannerLTree .container .context h1{
+        font-size: 40px;
+    }
+
+    .bannerLTree .container .context p{        
+        font-size: 16px;
+    }
+
+    .bannerLTree .container .context{
+        margin: auto 0 70px 0;
+    }
+}
