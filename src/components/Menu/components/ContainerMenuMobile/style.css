@@ -5,7 +5,7 @@
 }
 @media (max-width: 992px){
     .hamburguer{
-        width: 20px;
+        width: 25px;
         height: 20px;
         display: flex;
         justify-content: center;
@@ -20,23 +20,29 @@
 
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
         z-index: 1000;
     }
     .hamburguer .buttonHamburguer span{
-        width: 100%;
+        width: 80%;
         height: 3px;
         background: var(--color3);
         border-radius: 13px;
         margin: 2px 0;
     }
 
+    .hamburguer .buttonHamburguer span:nth-of-type(2){
+        margin-right: auto;
+    } 
+    
     .hamburguer .animateButton span{
         height: 3px;
-        transition: .4s ease-in;
+        transition: .6s ease-in;
     }
     .hamburguer .animateButton span:nth-of-type(2){
         display: none;
     } 
+
     .hamburguer .animateButton span:nth-of-type(1){
         transform: rotate(45deg);
         position: relative;
