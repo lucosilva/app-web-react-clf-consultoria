@@ -1,0 +1,101 @@
+.mainBanner{
+    width: 100%;
+    max-width: 1920px;
+    height: 670px;
+    min-height: 670px;
+
+    background: linear-gradient(to right, var(--color2) 35%, rgba(255,255,255,0.6) 0%), 
+    url(../../assets/home/homem-e-mulher-tomando-cafe.jfif) 100% no-repeat; 
+
+    background-size: cover;
+    background-position: center;
+
+    margin: 0 auto;  /* centralização em telas acima de 1920 */
+}
+
+.mainBanner > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.mainBanner .container{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+
+    height: inherit;
+}
+
+.mainBanner .container .context{
+    margin: auto 0 70px 0;
+}
+
+.mainBanner .container .context h1{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainBanner .container .context h1 span{
+    font-weight: bold;
+    font-size: 72px;
+    color: var(--color5);
+}
+
+.mainBanner .container .context span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--color3);    
+}
+
+.mainBanner .container .context p{
+    width: 20%;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 300;
+    color: var(--color3);
+
+    margin-top: 22px;
+}
+
+.mainBanner .container .context .container-buttonBanner{
+    display: flex;
+    margin-top: 62px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .mainBanner .container .context p{
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 991px){    
+    .mainBanner{
+        background: linear-gradient(to right, var(--color2) 40%, rgba(255,255,255,0.6) 60%), 
+        url(../../assets/home/homem-e-mulher-tomando-cafe.jfif) 100% no-repeat; 
+    }
+    .mainBanner .container .context span{
+        font-size: 14px; 
+    }
+    .mainBanner .container .context h1 span{
+        font-size: 40px;
+    }
+    .mainBanner .container .context p{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .mainBanner .container .context .container-buttonBanner{
+        margin-top: 40px !important;
+    }
+}
+
+@media (max-width: 767px){
+    .mainBanner .container .context .container-buttonBanner{
+        flex-direction: column-reverse;
+    }
+
+}
