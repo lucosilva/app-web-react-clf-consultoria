@@ -1,0 +1,55 @@
+.bannerLT{
+    width: 100%;
+    max-width: 1920px;
+    height: 564px;
+
+    background: linear-gradient(to right, var(--color2) 40%, #fff 0%);
+}
+
+.bannerLT .container{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+
+    height: inherit;
+
+    z-index: 1;
+}
+
+.bannerLT .container .context{
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto 0 70px 0;
+}
+
+.bannerLT .container .context h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    color: var(--color5);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.bannerLT .container .context p{
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--color3);
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+@media (max-width: 767px){
+    .bannerLT .container .context h1{
+        font-size: 40px;
+    }
+    .bannerLT .container .context p{        
+        font-size: 16px;
+    }
+}
