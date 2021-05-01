@@ -1,15 +1,20 @@
 import React from 'react';
+import './style.css';
 import { Link } from 'react-router-dom';
+import DefaulComponents from '../../components/DefaultComponents';
+import img404 from '../../assets/outros/undraw_page_not_found_su7k.svg';
 
 function Page404() {
     return (
-        <>
-            <h1>Pagina Não Encontrada!!</h1>
-            <p>Volte para a home</p>
-            <Link to="/">
-                ir para Home
-            </Link>
-        </>
+        <DefaulComponents>
+            <div className="nofind">
+                <div className="container">
+                    <img src={img404} />
+                    <h1>Eita! não encontramos essa pagina.</h1>                    
+                    <Link to="/">ir para Inicio</Link>
+                </div>
+            </div>
+        </DefaulComponents>
     )
 }
 
