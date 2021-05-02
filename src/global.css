@@ -4,6 +4,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: auto;
 }
 
 :root {
@@ -25,3 +26,18 @@ body {
 a {
   color: inherit;
 } 
+
+
+.MenuMobile .accordion{
+  margin: 0 !important;
+}
+
+@media (max-width: 576) {
+  .container-image-with-text .container .context a svg{
+    font-size: 22px;
+  }
+  .container-image-with-text .container .context a{
+    font-size: 22px;
+  }
+  
+}
