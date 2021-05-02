@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { FiArrowUpLeft } from "react-icons/fi";
+
 import { FiPhoneCall } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
 
@@ -45,7 +45,7 @@ function ImageRightWithText(props) {
                         <img src={bg} alt="" />
                     </div>
 
-                    <img src={props.imagem} className='destaque' />
+                    <img src={props.imagem} className='destaque'  alt=''/>
 
                     <div className="detalheUp">
                         <img src={bg} alt="" />

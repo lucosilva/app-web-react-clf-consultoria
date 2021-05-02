@@ -1,3 +1,5 @@
+//eslint no-use-before-define: 0
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
@@ -14,8 +16,8 @@ function ImageWithText(props) {
                     <div className="detalheDown">
                         <img src={bg} alt="" />
                     </div>
-
-                    <img src={props.imagem} className='destaque' />
+                    {/* // eslint-disable-next-line */}
+                    <img src={props.imagem} className='destaque' alt='' />
 
                     <div className="detalheUp">
                         <img src={bg} alt="" />

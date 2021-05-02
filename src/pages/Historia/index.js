@@ -1,3 +1,5 @@
+//eslint no-use-before-define: 0
+
 import React from 'react';
 import './style.css';
 
@@ -49,7 +51,7 @@ function Historia() {
 
                 <div className="container">
                     <div className='bg'>
-                        <img src={bg} />
+                        <img src={bg} alt='alt' />
                     </div>
                     <h2>A jornada</h2>
                 </div>

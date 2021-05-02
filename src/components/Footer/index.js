@@ -39,6 +39,7 @@ function Footer() {
                             <ul>
                                 <li><Link to="/historia/">Quem somos</Link></li>
                                 <li><Link to="/parceiros/">Parceiros</Link></li>
+                                 {/* eslint-disable-next-line */}
                                 <li><a href="http://consultoriatributariaefiscal.blogspot.com/" target="_blank">BLOG</a></li>
                             </ul>
                         </div>

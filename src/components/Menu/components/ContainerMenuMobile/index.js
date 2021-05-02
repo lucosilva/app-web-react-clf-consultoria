@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
-import { FiMenu } from "react-icons/fi";
+
 import MenuMobile from './components/MenuMobile';
 
 function ContainerMenuMobile() {

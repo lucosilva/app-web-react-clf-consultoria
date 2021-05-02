@@ -5,7 +5,7 @@ import './style.css';
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 function ArrowScroll(props) {
-    const left = props.direction == 'left' ? 'left' : '';
+    const left = props.direction === 'left' ? 'left' : '';
 
     function scrollDown(){
         window.scrollTo(0,500)

@@ -10,6 +10,8 @@ function Default(props) {
         solutionBackToTop();
 
         const sectionList = [...document.querySelectorAll('section')];
+
+        // eslint-disable-next-line
         sectionList.map((el,index)=>{
             el.setAttribute("id", 'section'+index);
         })

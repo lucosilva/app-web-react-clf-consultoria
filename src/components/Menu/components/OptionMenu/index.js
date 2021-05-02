@@ -15,7 +15,8 @@ function OptionMenu(props) {
                     <div className="group">
                         {props.listItem.map((item) =>{
 
-                            if( item.externalLink == 'true'){
+                            if( item.externalLink === 'true'){
+                                // eslint-disable-next-line
                                 return <a key={item.titulo} className='item-group' href={item.url} target="_blank"> {item.titulo} </a>
                             }
                             else{
@@ -29,7 +30,7 @@ function OptionMenu(props) {
 
             </div>
             <div className="back">
-                <img src={bg} />
+                <img src={bg} alt='' />
             </div>
         </div>
     )

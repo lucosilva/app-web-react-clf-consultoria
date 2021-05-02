@@ -1,12 +1,14 @@
+/* eslint-disable no-use-before-define */
+
 import React from 'react';
 import Carrossel from '../../../../../components/Carrossel';
 
-import { FiAlertCircle } from "react-icons/fi";
+
 import { ImOffice } from "react-icons/im";
-import { FaAward } from "react-icons/fa";
+
 import { FaHandshake } from "react-icons/fa";
 import { FaScroll } from "react-icons/fa";
-import { FaUniversity } from "react-icons/fa";
+
 
 
 function ListServicos(){

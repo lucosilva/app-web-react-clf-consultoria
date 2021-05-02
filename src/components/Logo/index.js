@@ -1,3 +1,5 @@
+//eslint no-use-before-define: 0
+
 import React, {useEffect , useState } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
@@ -10,9 +12,13 @@ function Logo(props) {
     const [animacao, setAnimacao] = useState('');
     const [logo, setLogo] = useState(logoBlack);
 
+    // eslint-disable-next-line
     useEffect(()=>{
+        // eslint-disable-next-line
         props.animate === 'on' ? eventScrollAnimate() : setAnimacao('');
+        // eslint-disable-next-line
         props.color === 'white' ?  setLogo(logoWhite) : setLogo(logoBlack);
+        // eslint-disable-next-line
     },[])
 
     function eventScrollAnimate(){

@@ -6,7 +6,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 function ButtonBanner(props) {
 
     const mainClass = " buttonBanner ";
-    const linkMobileClass = props.linkmobile == 'true' ? ' links-mobile ' : '' ;
+    const linkMobileClass = props.linkmobile === 'true' ? ' links-mobile ' : '' ;
 
     return (
         <Link to={props.url} className={mainClass + props.bgStyle + linkMobileClass}>

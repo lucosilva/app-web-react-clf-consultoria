@@ -1,9 +1,10 @@
+/* eslint-disable no-use-before-define */
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
 import Logo from '../../../../../Logo';
-import { FiX } from "react-icons/fi";
 
 function MenuMobile() {
     
@@ -46,6 +47,7 @@ function MenuMobile() {
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <Link to="/historia/">Quem Somos</Link>
+                                    {/* eslint-disable-next-line  */}
                                     <a href="http://consultoriatributariaefiscal.blogspot.com/" target="_blank">Blog</a>
                                     <Link to="/duvidas/">Dúvidas</Link>
                                 </div>

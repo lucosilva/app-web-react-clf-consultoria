@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+/* eslint-disable no-use-before-define */
+
+import React from 'react';
 import './style.css';
 import ButtonContrate from '../ButtonContrate';
 import Logo from '../Logo';
@@ -7,10 +9,6 @@ import ListNavContainer from './components/ListNavContainer';
 import ContainerMenuMobile from './components/ContainerMenuMobile';
 
 function Menu() {
-
-    const [on, setOn] = useState('');
-
-    const alturaAtualScroll = 300;
 
     function clickNavButton(idMenu) {
 
@@ -21,11 +19,14 @@ function Menu() {
         const menus = [...elementos];
 
         if (classe.length > 1) { //possui o open
+            // eslint-disable-next-line 
             menus.map((el) => { //limpa de todos
                 el.classList.remove('open');
             });
         } else { //não possoi open
+            // eslint-disable-next-line 
             menus.map((el) => { //limpa de todos
+                
                 el.classList.remove('open');
             });
 

@@ -1,7 +1,8 @@
+//eslint no-use-before-define: 0
+
 import React from 'react';
 import Carrossel from '../../../../../components/Carrossel';
 
-import { FiAlertCircle } from "react-icons/fi";
 import { ImOffice } from "react-icons/im";
 import { FaAward } from "react-icons/fa";
 import { FaHandshake } from "react-icons/fa";
