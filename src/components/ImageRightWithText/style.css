@@ -1,0 +1,193 @@
+.container-imageRight-with-text{
+    width: 100%;
+    height: 540px;
+    padding: 40px 0px;
+}
+
+.container-imageRight-with-text .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-imageRight-with-text .container .container-img{
+    width: 55%;
+    height: 462px;
+}
+
+.container-imageRight-with-text .container .container-img .destaque{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 13px;
+    object-fit: cover
+}
+
+.container-imageRight-with-text .container .container-img .detalheUp{
+    width: 100%;
+    position: relative;
+}
+.container-imageRight-with-text .container .container-img .detalheUp img{
+    position: absolute;
+    width: 159px;
+    height: 192px;
+    left: -55px;
+    top: -495px;
+}
+
+.container-imageRight-with-text .container .container-img .detalheDown{
+    width: 100%;
+    position: relative;
+}
+.container-imageRight-with-text .container .container-img .detalheDown img{
+    position: absolute;
+    width: 159px;
+    height: 192px;
+    right: -55px;
+    top: 305px;
+}
+
+.container-imageRight-with-text .container .context{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px 0 60px 0;
+}
+
+.container-imageRight-with-text .container .context a{
+    margin-top: auto;
+}
+
+.container-imageRight-with-text .container .context .hastag{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--color3);    
+}
+
+.container-imageRight-with-text .container .context h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    text-align: left;
+    line-height: 96px;
+    font-weight: bold;
+    color: var(--color5);
+
+    margin-bottom: 30px;
+}
+
+.container-imageRight-with-text .container .context p{
+    width: 80%;
+    font-size: 19px;
+    text-align: left;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--color3);
+}
+
+.container-imageRight-with-text .container .context a{
+    width: 200px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color5);
+
+    text-align: left;
+    transition: .2s ease-in;
+}
+
+.container-imageRight-with-text .container .context a svg{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.container-imageRight-with-text .container .context a:hover{
+    color: var(--color1)
+}
+
+
+@media (min-width: 992px) and (max-width: 1439px){
+    .container-imageRight-with-text .container .context h2{
+        font-size: 45px;
+        line-height: 76px;
+    }
+
+    .container-imageRight-with-text .container .container-img{
+        height: 390px;
+    }
+    .container-imageRight-with-text .container .container-img .detalheUp img{
+        left: -35px;
+        top: -445px;
+    }
+    .container-imageRight-with-text .container .container-img .detalheDown img{
+        top: 229px;
+        right: -23px;
+    }
+    .container-imageRight-with-text .container .context a{
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 991px){
+    .container-imageRight-with-text{
+        height: fit-content !important;
+    }
+    .container-imageRight-with-text .container{
+        flex-direction: column-reverse;
+        justify-content:flex-start;
+    }
+
+    .container-imageRight-with-text .container .container-img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .container-imageRight-with-text .container .container-img .detalheDown{
+        display: none;
+    }    
+
+    .container-imageRight-with-text .container .container-img .detalheUp{
+        display: none;
+    }    
+
+    .container-imageRight-with-text .container .context{
+        width: 100%;
+        align-items: center;
+    }
+
+    .container-imageRight-with-text .container .context .hastag{
+        width: 100%;
+        font-size: 14px;
+        text-align: right;
+    }
+
+    .container-imageRight-with-text .container .context h2{
+        font-size: 26px;
+        line-height: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container-imageRight-with-text .container .context p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .container-imageRight-with-text .container .context a{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .container-imageRight-with-text .container .context a svg {
+        font-size: 30px !important;
+        margin-left: 0 !important;
+        margin-right: 20px !important;
+    }
+}

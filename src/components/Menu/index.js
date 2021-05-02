@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import ButtonContrate from '../ButtonContrate';
 import Logo from '../Logo';
@@ -14,12 +14,12 @@ function Menu() {
 
     function clickNavButton(idMenu) {
 
-        
+
         const elementos = document.querySelectorAll('.OptionMenuContainer');
         const elIdMenu = document.querySelector(idMenu);
         const classe = [...elIdMenu.classList];
         const menus = [...elementos];
-        
+
         if (classe.length > 1) { //possui o open
             menus.map((el) => { //limpa de todos
                 el.classList.remove('open');
@@ -37,33 +37,34 @@ function Menu() {
         <>
             <header>
                 <div className="container">
-                    <Logo titulo='Consultoria Fiscal e Tributária' classe='logo' animate={on} />
+                    <Logo titulo='Consultoria Fiscal e Tributária' classe='logo' animate='on' link='/' />
 
                     <ContainerMenuMobile />
 
                     <ListNavContainer>
-                        <ButtonItemMenu titulo='Inicio' url='#'/>
-                        
-                        <ButtonItemMenu onClick={()=>{clickNavButton('#servicos')}} titulo='Serviços' icon='active' idMenu='servicos'>
+                        <ButtonItemMenu titulo='Inicio' url='/' />
+
+                        <ButtonItemMenu onClick={() => { clickNavButton('#servicos') }} titulo='Serviços' icon='active' idMenu='servicos' titleMenu='Serviços Operacionais'>
                             {[
-                                { titulo: 'BPO Fiscal', url: '#' },
-                                { titulo: 'BPO Contábil', url: '#' },
-                                { titulo: 'BPO Folha de Pagamento', url: '#' },
-                                { titulo: 'Staff Loan', url: '#' },
-                                { titulo: 'Paralegal', url: '#' },
-                                { titulo: 'Projetos Especiais', url: '#' },
-                            ]}
-                        </ ButtonItemMenu>
-                        
-                        <ButtonItemMenu onClick={()=>{clickNavButton('#sobrenos')}} titulo='O CLF' icon='active' idMenu='sobrenos'>
-                            {[
-                                { titulo: 'Quem Somos', url: '#' },
-                                { titulo: 'Blog', url: '#' },
-                                { titulo: 'Dúvidas', url: '#' }
+                                { titulo: 'BPO Fiscal', url: '/servicos/bpo-fiscal/' },
+                                { titulo: 'Paralegal', url: '/servicos/paralegal/' },
+                                { titulo: 'BPO Folha de Pagamento', url: '/servicos/bpo-folha/' },
+                                { titulo: 'Staff Loan', url: '/servicos/staff-loan/' },
+                                { titulo: 'BPO Contábil', url: '/servicos/bpo-contabil/' },
+                                { titulo: 'Projetos Especiais', url: '/servicos/projetos-especiais/' },
                             ]}
                         </ ButtonItemMenu>
 
-                        <ButtonItemMenu titulo='Contato' url='#'/>
+                        <ButtonItemMenu onClick={() => { clickNavButton('#sobrenos') }} titulo='O CLF' icon='active' idMenu='sobrenos' 
+                        titleMenu='Um pouco sobre nós'>
+                            {[
+                                { titulo: 'Quem Somos', url: '/historia/' },
+                                { titulo: 'Blog', externalLink:'true', url:'http://consultoriatributariaefiscal.blogspot.com/' },
+                                { titulo: 'Dúvidas', url: '/duvidas/' }
+                            ]}
+                        </ ButtonItemMenu>
+
+                        <ButtonItemMenu titulo='Contato' url='/contato/' />
                     </ ListNavContainer>
 
                     <ButtonContrate classe='unLight buttonContrate' titulo='Contrate' />

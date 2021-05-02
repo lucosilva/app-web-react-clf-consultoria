@@ -1,0 +1,47 @@
+.carrosselContainer{
+    width: 100%;
+    padding: 40px 0;
+}
+
+.carrosselContainer .title h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    color: var(--color5);
+    text-align: center;
+}
+
+.carrosselContainer .container{
+    margin: 60px auto;
+}
+
+.carrosselContainer .container .item-carrossel{
+    width: 100%;
+    height: 250px;
+}
+
+.carrosselContainer .container .slick-prev:before, .slick-next:before{
+    color: var(--color3) !important;
+    font-size: 24px !important;
+}
+
+.carrosselContainer .container .slick-dots{
+    bottom: -45px;
+}
+
+@media (max-width: 576px) {
+    .carrosselContainer .title h2{
+        font-size: 26px;
+    }
+    .carrosselContainer .container .linkItemCarrossel {
+        width: 300px !important;
+    }
+
+    .carrosselContainer .container .slick-next{
+        right: 19px;
+    }
+    .carrosselContainer .container .slick-prev {
+        left: 6px;
+        z-index: 3;
+    }
+}

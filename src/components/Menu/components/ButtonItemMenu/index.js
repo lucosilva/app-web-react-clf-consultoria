@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 import OptionMenu from '../OptionMenu';
 
@@ -8,8 +9,8 @@ function ButtonItemMenu(props) {
 
     return (
         <li onClick={props.onClick}>
-            {props.icon === 'active' ? <span>{props.titulo} <FiChevronDown /></span> : <a href={props.url}>{props.titulo}</a>}
-            {props.icon === 'active' ? <OptionMenu idMenu={props.idMenu} listItem={props.children} /> : null}
+            {props.icon === 'active' ? <span>{props.titulo} <FiChevronDown /></span> : <Link to={props.url}>{props.titulo}</Link>}
+            {props.icon === 'active' ? <OptionMenu idMenu={props.idMenu} titleMenu={props.titleMenu} listItem={props.children} /> : null}
         </li>        
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -8,10 +9,10 @@ function ButtonBanner(props) {
     const linkMobileClass = props.linkmobile == 'true' ? ' links-mobile ' : '' ;
 
     return (
-        <a href={props.url} className={mainClass + props.bgStyle + linkMobileClass}>
+        <Link to={props.url} className={mainClass + props.bgStyle + linkMobileClass}>
             {props.cta}
             <FiArrowUpRight />
-        </a>
+        </Link>
     )
 }
 

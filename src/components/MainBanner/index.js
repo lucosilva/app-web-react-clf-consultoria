@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.css';
-import ImgBanner from '../../assets/home/homem-e-mulher-tomando-cafe.jfif';
 import ButtonBanner from './components/ButtonBanner';
 import Social from './components/Social';
+import ArrowScroll from '../ArrowScroll';
 
 function MainBanner() {
     return (
-        <div className="mainBanner">
+        <section className="mainBanner">
             <div className="container">
                 <div className="context">
                     <span>Concentre-se no que for importante!</span>
@@ -19,14 +19,15 @@ function MainBanner() {
                     </p>
 
                     <div className="container-buttonBanner">
-                        <ButtonBanner cta="Conheça os serviços" url="#" bgStyle="grey" linkmobile="true" />
-                        <ButtonBanner cta="Contrate a CLF" url="#" bgStyle="dark" />
+                        <ButtonBanner cta="Conheça os serviços" url="#servicos" bgStyle="grey" linkmobile="true" />
+                        <ButtonBanner cta="Contrate a CLF" url="/formulario/" bgStyle="dark" />
                     </div>
                 </div>
 
                 <Social facebook="#" instagram="#" linkedin="" />
+                <ArrowScroll direction='left' />
             </div>
-        </div>
+        </section>
     )
 }
 

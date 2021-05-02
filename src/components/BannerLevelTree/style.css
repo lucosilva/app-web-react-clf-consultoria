@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 1920px;
     height: 392px;
-
+    margin: 0 auto;
     background: linear-gradient(to right, var(--color2) 100%, #fff 0%);
 }
 
@@ -57,3 +57,11 @@
         margin: auto 0 70px 0;
     }
 }
+
+
+
+
+
+
+
+

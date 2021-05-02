@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
+
 import Logo from '../../../../../Logo';
 import { FiX } from "react-icons/fi";
 
@@ -13,7 +15,7 @@ function MenuMobile() {
                 </div>
                 <div className="menumobile-body">
                     <div className="item-menu-mobile">
-                        <a href="#">Inicio</a>
+                        <Link to="/">Inicio</Link>
                     </div>
 
                     <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -25,12 +27,12 @@ function MenuMobile() {
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <a href="#">BPO Fiscal</a>
-                                    <a href="#">BPO Contábil</a>
-                                    <a href="#">BPO Folha de Pagamento</a>
-                                    <a href="#">Staff Loan</a>
-                                    <a href="#">Paralegal</a>
-                                    <a href="#">Projetos Especiais</a>
+                                    <Link to="/servicos/bpo-fiscal/">BPO Fiscal</Link>
+                                    <Link to="/servicos/bpo-contabil/">BPO Contábil</Link>
+                                    <Link to="/servicos/bpo-folha/">BPO Folha de Pagamento</Link>
+                                    <Link to="/servicos/staff-loan/">Staff Loan</Link>
+                                    <Link to="/servicos/paralegal/">Paralegal</Link>
+                                    <Link to="/servicos/projetos-especiais/">Projetos Especiais</Link>
                                 </div>
                             </div>
                         </div>
@@ -43,16 +45,16 @@ function MenuMobile() {
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <a href="#">Quem Somos</a>
-                                    <a href="#">Blog</a>
-                                    <a href="#">Dúvidas</a>
+                                    <Link to="/historia/">Quem Somos</Link>
+                                    <a href="http://consultoriatributariaefiscal.blogspot.com/" target="_blank">Blog</a>
+                                    <Link to="/duvidas/">Dúvidas</Link>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="item-menu-mobile">
-                        <a href="#">Contato</a>
+                        <Link to="/contato/">Contato</Link>
                     </div>
                 </div>
             </div>

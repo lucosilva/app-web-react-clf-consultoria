@@ -36,9 +36,10 @@
       opacity: 0;
     }
   }
+
   .animate__bounceOutLeft {
     -webkit-animation-name: bounceOutLeft;
-    animation: bounceOutLeft 3s;
+    animation: bounceOutLeft 1s;
     opacity: 0; 
   }
 

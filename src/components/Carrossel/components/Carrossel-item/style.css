@@ -1,0 +1,102 @@
+.linkItemCarrossel{
+    text-decoration: none;
+    display: flex !important;
+    justify-content: center;
+    align-items: center ;
+}
+.ItemCarrossel{
+    width: 90%;
+    height: 250px;
+
+    align-items: flex-end;
+    text-align: right;
+
+    cursor: pointer;
+
+    overflow: hidden;
+}
+
+.ItemCarrossel svg{
+    font-size: 30px;
+    margin-bottom: 22px;
+    color: var(--color3);
+}
+
+.ItemCarrossel h3{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 22px;
+    color: var(--color4);
+}
+
+.ItemCarrossel p{
+    width: 80%;
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--color3);
+
+    transition: .4s ease-in;
+}
+
+.ItemCarrossel:hover p{
+    opacity: .2;
+}
+.ItemCarrossel::after{
+    content: 'Saiba mais';
+    bottom: 0;
+    right: 0;
+    width: 130px;
+    height: 130px;
+
+    position: absolute;
+
+    background: linear-gradient(135deg, rgba(0,0,0,0) 50%, var(--color1) 50%);
+    color: #fff;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    padding-right: 10px;
+    padding-bottom: 6px;
+
+    transform: translateY(130px);
+    transition: .2s ease-in;
+
+}
+
+
+.ItemCarrossel:hover::after{
+    content: 'Saiba mais';
+
+    transform: translateY(0px);
+}
+
+@media (max-width: 992px){
+    .ItemCarrossel p{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .ItemCarrossel{
+        height: 200px;
+    }
+
+    .ItemCarrossel svg{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .ItemCarrossel h3{
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+    
+    .ItemCarrossel p{
+        font-size: 14px;
+    }
+
+}
