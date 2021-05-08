@@ -1,0 +1,122 @@
+import { useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+const quinzeSegundosDuracaoNotificacao = 15*1000;
+toast.configure({autoClose:quinzeSegundosDuracaoNotificacao});
+
+
+function useForm(valueInit) {
+
+    const [dataForm, setDataForm] = useState(valueInit);
+
+    function handleChange(key, newValue) {
+        setDataForm({
+            ...dataForm,
+            [key]: newValue
+        });
+    }
+
+    function handleSend() {
+        const endPoint = 'https://form-send-email.herokuapp.com/data/form/';
+
+        fetch(endPoint, {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify(dataForm),
+        }).then(async (dataServer) => {
+                if (dataServer.ok) {
+                    return await dataServer.json();
+                    
+                }
+                throw new Error('Não foi possivel cadastrar os dados :()')
+            });
+
+        clearForm();
+    }
+
+    function getDataForm() {
+        return dataForm;
+    }
+
+    function clearForm() {
+        setDataForm(valueInit);
+    }
+
+    function validateForm() {
+        return {
+            email: validateEmail(dataForm.email),
+            tel: validateTel(dataForm.tel),
+            name: validateName(dataForm.name)
+        }
+
+    }
+
+    function validateEmail(valueEmail) {
+
+        let IsOthersChar = [];
+        const positionAT = valueEmail.indexOf("@"); //@
+        const positionDOT = valueEmail.lastIndexOf("."); //(.)
+
+        const othersChar = [' ', '!', '#', '$', '%', '¨', '&', '*', '(', ')', '-', '=', ',', '?', '´', '^', '~', '}', '{', '[', ']', ';', ':', '|', '₢', '/', '°'];
+
+        // eslint-disable-next-line
+        othersChar.map((charItem) => {
+            IsOthersChar.push(valueEmail.indexOf(charItem) > 0); // se retornar true, a string contem uma um char especial nela. 
+        })
+
+
+        if (positionAT < 1 || positionDOT < positionAT + 2 || positionDOT + 2 >= valueEmail.length || IsOthersChar.indexOf(true) >= 0) {
+            //Não é um endereço de e-mail válido
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function validateTel(valueTel) {
+        if (valueTel.length < 15) {
+            //Não é um telefone válido
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function validateName(valueName){
+        if (valueName.length < 1) {
+            //campo de texto vazio
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function handleSubmit() {
+        const objValidate = validateForm();
+        if (objValidate.email && objValidate.tel && objValidate.name) {
+            handleSend();
+        }
+        
+        if(objValidate.email === false){
+            //toast de aviso email invalido    
+            toast.error('Endereço de e-mail não é válido. Tente novamente');
+        }
+        
+        if(objValidate.tel === false){
+            //toast de aviso tel invalido
+            toast.warn('Telefone não é válido. Tente novamente');
+        }
+
+        if(objValidate.name === false){
+            //toast de aviso nome invalido
+            toast.warn('Campo de nome vazio, favor preencher.');
+        }
+    }
+
+    return { handleChange, getDataForm, handleSubmit }
+
+}
+
+export default useForm;
