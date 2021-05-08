@@ -1,0 +1,128 @@
+
+.contrate  .context form .form-item{
+    width: 280px;
+    height: 85px;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 6px;
+    border: 1px solid var(--color2);
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.15);
+    background: #fff;
+
+    cursor: pointer;
+
+    margin-right: 16px;
+}
+.contrate  .context form .form-item label{
+    display: block !important;
+}
+
+.contrate  .context form .form-item .input{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contrate  .context form .form-item .input span{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color3);
+    padding: 10px 20px 0px 20px;
+}
+
+.contrate  .context form .form-item .input input{
+    width: 100%;
+    height: 100%;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color4);
+    border: 0 transparent;
+
+    padding: 10px 20px 15px 20px;
+}
+
+.contrate  .context form .form-item .input input::placeholder{
+    color: #7b8c8b4f;
+}
+
+.contrate  .context form .form-item .input input:-internal-autofill-selected{
+    background-color: #fff !important;
+}
+.contrate  .context form .form-item .input input:focus{
+    border: 0 transparent !important;
+    background-color: transparent !important;
+}
+.contrate  .context form .form-item .input input:focus-visible{
+    border: 0 transparent !important;
+    background-color: transparent !important;
+    outline: 0 !important;
+}
+
+.contrate  .context form .form-item .button-input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    z-index: 2;
+
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    cursor: pointer;
+    transition: background .2s;
+    transition:  transform .6s ease-in-out;
+}
+
+.contrate  .context form .form-item .button-input:hover{
+    background: var(--color3);
+    transform: translateX(-10%);
+}
+.contrate  .context form .form-item .button-input:hover span{
+    color: var(--color2);
+}
+.contrate  .context form .form-item .button-input:hover svg{
+    color: var(--color2);
+}
+
+.contrate  .context form .form-item .button-input span{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color3);
+}
+
+.contrate  .context form .form-item .button-input svg{
+    font-size: 20px;
+    color: var(--color3);
+}
+
+
+.contrate  .context form .form-item .openForm{  
+    transition: transform .3s;  
+    transform: translateX(-110%) !important;
+}
+
+
+
+@media (max-width: 991px){
+
+    .contrate  .context form .form-item{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .contrate .context .container form .buttonSubmit {
+        width: 100%;
+        height: 60px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
