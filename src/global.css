@@ -20,7 +20,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--color2);
+  background: var(--color2);  
 }
 
 a {
