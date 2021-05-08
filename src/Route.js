@@ -11,6 +11,7 @@ import ProjetosEspecias from './pages/Servicos/projetosEspecias';
 
 import Historia from './pages/Historia';
 import Contato from './pages/Contato';
+import FormularioSucesso from './pages/Formulario/page/success';
 
 function Routes() {
     return (
@@ -25,6 +26,7 @@ function Routes() {
                 <Route path="/servicos/projetos-especiais/" component={ProjetosEspecias} />
                 <Route path="/historia/" component={Historia} />
                 <Route path="/contato/" component={Contato} />
+                <Route path="/formulario/sucesso/" component={FormularioSucesso} />
                 
                 <Route component={Page404} />
             </Switch>
