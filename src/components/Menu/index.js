@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './style.css';
-import ButtonContrate from '../ButtonContrate';
+// import ButtonContrate from '../ButtonContrate';
 import Logo from '../Logo';
 import ButtonItemMenu from './components/ButtonItemMenu';
 import ListNavContainer from './components/ListNavContainer';
@@ -68,7 +68,7 @@ function Menu() {
                         <ButtonItemMenu titulo='Contato' url='/contato/' />
                     </ ListNavContainer>
 
-                    <ButtonContrate classe='unLight buttonContrate' titulo='Contrate' />
+                    {/* <ButtonContrate classe='unLight buttonContrate' titulo='Contrate'  /> */}
                 </div>
             </header>
 

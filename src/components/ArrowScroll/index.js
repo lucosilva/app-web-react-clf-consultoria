@@ -12,7 +12,7 @@ function ArrowScroll(props) {
     }
 
     return (
-        <section class='link-btn-scroll' onClick={scrollDown}>
+        <section className='link-btn-scroll' onClick={scrollDown}>
             <div className={'btn-scroll '+ left}>
 
                 <MdKeyboardArrowDown />

@@ -4,14 +4,13 @@
     justify-content: center;
     align-items: center ;
 }
+
 .ItemCarrossel{
     width: 90%;
     height: 250px;
 
     align-items: flex-end;
     text-align: right;
-
-    cursor: pointer;
 
     overflow: hidden;
 }
@@ -38,10 +37,15 @@
     transition: .4s ease-in;
 }
 
-.ItemCarrossel:hover p{
+.saiba-mais{    
+    cursor: pointer;
+}
+
+.saiba-mais:hover p{
     opacity: .2;
 }
-.ItemCarrossel::after{
+
+.saiba-mais::after{
     content: 'Saiba mais';
     bottom: 0;
     right: 0;
@@ -68,8 +72,7 @@
 
 }
 
-
-.ItemCarrossel:hover::after{
+.saiba-mais:hover::after{
     content: 'Saiba mais';
 
     transform: translateY(0px);

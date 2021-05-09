@@ -6,7 +6,6 @@ import InputMask from 'react-input-mask';
 
 function FormIntem(props) {
 
-
     function open(event) {
         const el = event.target.parentNode.parentNode;
         const elButtonInput = el.querySelector('.button-input');

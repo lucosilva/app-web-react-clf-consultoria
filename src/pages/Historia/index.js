@@ -22,7 +22,7 @@ function Historia() {
             <div className="wording">
                 <div className="container">
                     <div className="title">
-                        <h2>Sua empresa sendo tratada como grande!</h2>
+                        <h2>Sua empresa tratada como grande!</h2>
                     </div>
                     <div className='wording-body'>
                         <div className="container">
@@ -107,15 +107,15 @@ function Historia() {
                         <div>
                             <div className='text-item'>
                                 <p>
-                                    Trabalhei muitos anos em escritórios de contabilidade atendendo empresas de pequeno e médio porte.
+                                Tenho experiência de 20 anos na área e durante esse tempo eu atendi as mais diversas empresas, seja ela pequena, média ou grandes multinacionais.
                                 </p>
                                 <p>
-                                    Depois fui trabalhar em uma consultoria atendendo somente empresas de grande porte, esses clientes contavam com um atendimento personalizado, eram tratados como únicos.
+                                E durante a minha jornada profissional eu sempre fui instruído a tratar os grandes com prioridade, e isso sempre me incomodou, visto que os clientes menores são os que mais precisam de acompanhamento.
                                 </p>
                             </div>
                             <div className='text-item'>
                                 <p>
-                                    Essa experiência eu quero trazer para as pequenas e médias empresas, por isso fundei a CLF Consultoria Fiscal e Tributária, para atendê-lo como único, exclusivo.
+                                Para mudar essa realidade é que surgiu a CLF Consultoria Fiscal e Tributária, para ajudar a sua empresa a crescer oferecendo um atendimento personalizado e exclusivo.
                                 </p>
 
                                 <div className="author">

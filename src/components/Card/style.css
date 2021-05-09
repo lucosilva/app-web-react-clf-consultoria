@@ -8,8 +8,6 @@
     align-items: flex-end;
     text-align: right;
 
-    cursor: pointer;
-
     overflow: hidden;
 
 }
@@ -36,9 +34,10 @@
     transition: .4s ease-in;
 }
 
-.card:hover p{
+/* .card:hover p{
     opacity: .2;
-}
+} */
+/* 
 .card::after{
     content: 'Saiba mais';
     bottom: 0;
@@ -71,7 +70,7 @@
     content: 'Saiba mais';
 
     transform: translateY(0px);
-}
+} */
 
 @media (max-width: 992px){
     .card p{

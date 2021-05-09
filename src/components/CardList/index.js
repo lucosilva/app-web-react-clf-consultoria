@@ -15,7 +15,7 @@ function CardList(props) {
                 <div className="row">     
                     {
                      listCards.map((dadoCard)=>{                        
-                         return <Card key={dadoCard.title} url={dadoCard.url} icon={dadoCard.icon} title={dadoCard.title} subtitle={dadoCard.subtitle}/>
+                         return <Card key={dadoCard.title} saibaMais={props.saibaMais} url={dadoCard.url} icon={dadoCard.icon} title={dadoCard.title} subtitle={dadoCard.subtitle}/>
                      }) 
                     }               
                 </div>

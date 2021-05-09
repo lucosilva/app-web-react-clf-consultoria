@@ -28,7 +28,7 @@ function Logo(props) {
     }
 
     return (
-        <Link className={props.classe} to={props.link}>
+        <Link className={props.classe} to="/">
             <img src={logo} alt="Logo" />
 
             <span className={animacao + classText} >

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const quinzeSegundosDuracaoNotificacao = 15*1000;
@@ -6,7 +7,7 @@ toast.configure({autoClose:quinzeSegundosDuracaoNotificacao});
 
 
 function useForm(valueInit) {
-
+    const history = useHistory();
     const [dataForm, setDataForm] = useState(valueInit);
 
     function handleChange(key, newValue) {
@@ -17,23 +18,27 @@ function useForm(valueInit) {
     }
 
     function handleSend() {
-        const endPoint = 'https://form-send-email.herokuapp.com/data/form/';
 
-        fetch(endPoint, {
+        toast('Estamos recebendos os seus dados.....',{autoClose: 8000});
+        
+        fetch(process.env.END_POINT, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
             },
             body: JSON.stringify(dataForm),
-        }).then(async (dataServer) => {
-                if (dataServer.ok) {
-                    return await dataServer.json();
-                    
-                }
-                throw new Error('Não foi possivel cadastrar os dados :()')
-            });
-
-        clearForm();
+        })     
+        .then(async (dataServer) => {
+            if (dataServer.ok) {                
+                history.push('/formulario/sucesso/');
+                clearForm();
+                return await dataServer.json();                 
+            }else{
+                toast.error('Nosso servidor está indisponivel no momento. Tente novamente mais tarde');
+                clearForm();
+            }
+                throw new Error('server fora do ar')
+        });
     }
 
     function getDataForm() {

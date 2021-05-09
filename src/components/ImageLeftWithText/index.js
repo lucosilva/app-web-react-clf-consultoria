@@ -9,8 +9,11 @@ import { FiArrowUpLeft } from "react-icons/fi";
 import bg from '../../assets/outros/BG.png';
 
 function ImageWithText(props) {
+
+    const classeSection = 'container-image-with-text '+ props.bg;
+    
     return (
-        <section className='container-image-with-text bg-white'>
+        <section className={classeSection}>
             <div className="container">
                 <div className="container-img">
                     <div className="detalheDown">

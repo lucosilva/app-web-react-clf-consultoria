@@ -14,7 +14,7 @@ function Detalhes() {
              que está enfrentando.'
             button='on'
             cta='Conheçer seviços'
-            buttonUrl='/#section2'
+            buttonUrl='/servicos/'
         />
     );
 }

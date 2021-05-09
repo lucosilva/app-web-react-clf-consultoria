@@ -4,11 +4,14 @@ import './style.css';
 import { FiArrowUpLeft } from "react-icons/fi";
 
 
-import bg from '../../assets/outros/BG.png';
+import bg_img from '../../assets/outros/BG.png';
 
 function ImageRightWithText (props) {
+
+    const classeSection = 'container-imageRight-with-text '+ props.bg;
+
     return (
-        <section className='container-imageRight-with-text bg-white'>
+        <section className={classeSection}>
             <div className="container">
 
                 <div className="context">
@@ -22,13 +25,13 @@ function ImageRightWithText (props) {
 
                 <div className="container-img">
                     <div className="detalheDown">
-                        <img src={bg} alt="" />
+                        <img src={bg_img} alt="" />
                     </div>
 
-                    <img src={props.imagem} className='destaque' />
+                    <img src={props.imagem} className='destaque' alt='' />
 
                     <div className="detalheUp">
-                        <img src={bg} alt="" />
+                        <img src={bg_img} alt="" />
                     </div>
                 </div>
             </div>

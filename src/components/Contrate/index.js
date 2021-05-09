@@ -10,13 +10,16 @@ function Contrate() {
         email: "",
         tel: ""
     }
-    const { handleChange, handleSubmit } = useForm(valueInit);
-
+    const { handleChange, handleSubmit, getDataForm } = useForm(valueInit);
+    const { name } = getDataForm();
+    const { email } = getDataForm();
+    const { tel } = getDataForm();
+    
     return (
         <section className='contrate'>
             <div className='context'>
                 <div className="container">
-                    <h2>Desejas solicitar um orçamento agora ?</h2>
+                    <h2>Deseja solicitar um orçamento agora ?</h2>
                     <p>Preencher o nosso formulario, entraremos em contato com você o mais breve possivel.</p>
 
 
@@ -31,6 +34,7 @@ function Contrate() {
                             }}
 
                             mask=""
+                            valueForm={name}
                         />
                         <FormItem
                             titleButton="Telefone"
@@ -41,6 +45,7 @@ function Contrate() {
                                 handleChange('tel', event.target.value);
                             }}
                             mask="(99) 9999-99999"
+                            valueForm={tel}
                         />
                         <FormItem
                             titleButton="E-mail"
@@ -51,9 +56,10 @@ function Contrate() {
                                 handleChange('email', event.target.value);
                             }}
                             mask=""
+                            valueForm={email}
                         />
-                       
-                        <div className="buttonSubmit" onClick={() => { handleSubmit()}}>Enviar</div>
+
+                        <div className="buttonSubmit" onClick={() => { handleSubmit() }}>Enviar</div>
 
                         <input type="text" autoComplete="on" style={{ "display": "none" }} />
                     </form>

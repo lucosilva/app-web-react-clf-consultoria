@@ -19,8 +19,8 @@ function MainBanner() {
                     </p>
 
                     <div className="container-buttonBanner">
-                        <ButtonBanner cta="Conheça os serviços" url="#servicos" bgStyle="grey" linkmobile="true" />
-                        <ButtonBanner cta="Contrate a CLF" url="/formulario/" bgStyle="dark" />
+                        <ButtonBanner cta="Conheça os serviços" url="/servicos/" bgStyle="dark"  />
+                        {/* <ButtonBanner cta="Contrate a CLF" url="#" bgStyle="grey" linkmobile="true"/> */}
                     </div>
                 </div>
 

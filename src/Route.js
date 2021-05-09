@@ -2,12 +2,14 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Page404 from './pages/Page404';
-import BPOFiscal from './pages/Servicos/BPOFiscal';
-import BPOContabil from './pages/Servicos/BPOContabil';
-import BPOFolha from './pages/Servicos/BPOFolha';
-import Paralegal from './pages/Servicos/Paralegal';
-import StaffLoan from './pages/Servicos/StaffLoan';
-import ProjetosEspecias from './pages/Servicos/projetosEspecias';
+
+import Servicos from './pages/Servicos';
+import BPOFiscal from './pages/Servicos/pages/BPOFiscal';
+import BPOContabil from './pages/Servicos/pages/BPOContabil';
+import BPOFolha from './pages/Servicos/pages/BPOFolha';
+import Paralegal from './pages/Servicos/pages/Paralegal';
+import StaffLoan from './pages/Servicos/pages/StaffLoan';
+import ProjetosEspecias from './pages/Servicos/pages/projetosEspecias';
 
 import Historia from './pages/Historia';
 import Contato from './pages/Contato';
@@ -24,6 +26,7 @@ function Routes() {
                 <Route path="/servicos/paralegal/" component={Paralegal} />
                 <Route path="/servicos/staff-Loan/" component={StaffLoan} />
                 <Route path="/servicos/projetos-especiais/" component={ProjetosEspecias} />
+                <Route path="/servicos/" component={Servicos} />
                 <Route path="/historia/" component={Historia} />
                 <Route path="/contato/" component={Contato} />
                 <Route path="/formulario/sucesso/" component={FormularioSucesso} />

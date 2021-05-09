@@ -49,7 +49,6 @@ function Carrossel(props) {
     return (
         <section className='carrosselContainer '>
             <div className="title">
-                <h2>Opções de serviços</h2>
                 <h2>{props.title}</h2>
             </div>
 
@@ -57,7 +56,7 @@ function Carrossel(props) {
                 <Slider {...settings}>
                     {
                         listItem.map((card)=>{
-                            return  <Item icon={card.icone} title={card.titulo} subtitle={card.subtitulo} />                            
+                            return  <Item saibaMais={props.saibaMais} icon={card.icone} title={card.titulo} subtitle={card.subtitulo} />                            
                         })
                     }
                 </Slider>

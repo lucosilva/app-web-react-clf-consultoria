@@ -8,11 +8,12 @@ function ChamadaHistoria(){
         <ImageLeftWithText 
             imagem={ImgMain}
             hastag='#CLFHistoria'
-            title='Sua empresa sendo tratada como grande'
-            description='Conheça melhor a história de nossa Contabilidade'
+            title='Conheça melhor nossa história'
+            description='Sua empresa tratada como grande.'
             button='on'
             buttonUrl='/historia/'
             cta='saiba mais'
+            bg="bg-white"
         />            
     );
 }

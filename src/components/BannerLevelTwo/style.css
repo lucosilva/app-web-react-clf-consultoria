@@ -3,7 +3,7 @@
     max-width: 1920px;
     height: 564px;
     margin: 0 auto;
-    background: linear-gradient(to right, var(--color2) 40%, #fff 0%);
+    background: linear-gradient(to right, var(--color2) 35%, #fff 0%);
 }
 
 .bannerLT .container{

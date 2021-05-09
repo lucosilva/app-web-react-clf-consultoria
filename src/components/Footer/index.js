@@ -14,9 +14,9 @@ function Footer() {
                 <div className="context">
                     <div className="apresentation">
                         <Logo titulo='Consultoria Fiscal e Tributária' classe='logo' color='white' />
-                        <h3> Sua empresa sendo tratada como grande. </h3>
+                        <h3> Sua empresa tratada como grande. </h3>
 
-                        <ButtonContrate classe='light buttonContrate' titulo='Contrate' link='/formulario/' />
+                        <ButtonContrate classe='light buttonContrate' titulo='Contato' link='/contato/' />
                     </div>
                     <nav>
                         <div className="menuItem">
@@ -38,7 +38,7 @@ function Footer() {
                             </div>
                             <ul>
                                 <li><Link to="/historia/">Quem somos</Link></li>
-                                <li><Link to="/parceiros/">Parceiros</Link></li>
+                                {/* <li><Link to="/parceiros/">Parceiros</Link></li> */}
                                  {/* eslint-disable-next-line */}
                                 <li><a href="http://consultoriatributariaefiscal.blogspot.com/" target="_blank">BLOG</a></li>
                             </ul>
