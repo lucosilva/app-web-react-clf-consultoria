@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageLeftWithText from '../../../../../../components/ImageLeftWithText';
 
-import imgMain from '../../../../../../assets/sevicos/SL/to-do.jpg';
+import imgMain from '../../../../../../assets/sevicos/SL/to-do.gif';
 
 function Detalhes() {
     return (

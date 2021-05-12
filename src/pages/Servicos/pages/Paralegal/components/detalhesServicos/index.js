@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageLeftWithText from '../../../../../../components/ImageLeftWithText';
 
-import imgMain from '../../../../../../assets/sevicos/paralegal/assinando-documento.jpg';
+import imgMain from '../../../../../../assets/sevicos/paralegal/assinando-documento.gif';
 
 function Detalhes() {
     return (

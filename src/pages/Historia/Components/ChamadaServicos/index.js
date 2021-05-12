@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageLeftWithText from '../../../../components/ImageLeftWithText';
 
-import imgMain from '../../../../assets/historia/reuniao-home-mulher-sucesso.jpg';
+import imgMain from '../../../../assets/historia/reuniao-home-mulher-sucesso.gif';
 
 function Detalhes() {
     return (

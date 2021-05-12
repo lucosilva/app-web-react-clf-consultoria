@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageLeftWithText from '../../../../../../components/ImageLeftWithText';
 
-import imgMain from '../../../../../../assets/sevicos/contabil/mesa-de-trabalho-com-dois-notebook.jpg';
+import imgMain from '../../../../../../assets/sevicos/contabil/mesa-de-trabalho-com-dois-notebook.gif';
 
 function Detalhes() {
     return (

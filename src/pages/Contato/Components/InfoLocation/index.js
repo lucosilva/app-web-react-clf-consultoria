@@ -1,7 +1,7 @@
 import React from 'react';
 import ImagelefttWithText from '../../../../components/ImageLeftWithText';
 
-import imgMain from '../../../../assets/contato/mao-segurando-celular-aberto-no-maps.jpg';
+import imgMain from '../../../../assets/contato/mao-segurando-celular-aberto-no-maps.gif';
 
 function Detalhes() {
     return (

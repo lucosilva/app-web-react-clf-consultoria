@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageRighttWithText from '../../../../components/ImageRightWithText-Contact';
 
-import imgMain from '../../../../assets/contato/img-info-contato.jpg';
+import imgMain from '../../../../assets/contato/img-info-contato.gif';
 
 function Detalhes() {
     return (

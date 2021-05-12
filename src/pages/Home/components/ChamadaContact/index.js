@@ -1,6 +1,6 @@
 import React from 'react';
 import ImageRightWithText from '../../../../components/ImageRightWithText';
-import ImgMain from '../../../../assets/home/call.jpg'; 
+import ImgMain from '../../../../assets/home/call.gif'; 
 
 
 function ChamadaServicos(){

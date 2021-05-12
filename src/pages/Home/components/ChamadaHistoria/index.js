@@ -1,6 +1,6 @@
 import React from 'react';
 import ImageLeftWithText from '../../../../components/ImageLeftWithText';
-import ImgMain from '../../../../assets/home/homem-de-braços-aberto-para-cima.jpg'; 
+import ImgMain from '../../../../assets/home/homem-de-braços-aberto-para-cima.gif'; 
 
 
 function ChamadaHistoria(){
