@@ -5,7 +5,7 @@
     min-height: 670px;
 
     background: linear-gradient(to right, var(--color2) 35%, rgba(255,255,255,0.6) 0%), 
-    url(../../assets/home/homem-e-mulher-tomando-cafe.gif) 100% no-repeat; 
+    url(../../assets/home/homem-e-mulher-tomando-cafe.jpg) 100% no-repeat; 
 
     background-size: cover;
     background-position: center;
@@ -75,7 +75,7 @@
 @media (max-width: 991px){    
     .mainBanner{
         background: linear-gradient(to right, var(--color2) 40%, rgba(255,255,255,0.6) 60%), 
-        url(../../assets/home/homem-e-mulher-tomando-cafe.gif) 100% no-repeat; 
+        url(../../assets/home/homem-e-mulher-tomando-cafe.jpg) 100% no-repeat; 
     }
     .mainBanner .container .context span{
         font-size: 14px; 
