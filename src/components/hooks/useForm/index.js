@@ -21,7 +21,7 @@ function useForm(valueInit) {
 
         toast('Estamos recebendos os seus dados.....',{autoClose: 8000});
 
-        fetch(process.env.END_POINT, {
+        fetch(process.env.API_URL, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -29,7 +29,7 @@ function useForm(valueInit) {
             body: JSON.stringify(dataForm),
         })     
         .then(async (dataServer) => {
-            console.log(dataServer);
+
             if (dataServer.ok) {                
                 history.push('/formulario/sucesso/');
                 clearForm();
