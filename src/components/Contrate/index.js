@@ -20,7 +20,7 @@ function Contrate() {
             <div className='context'>
                 <div className="container">
                     <h2>Deseja solicitar um orçamento agora ?</h2>
-                    <p>Preencher o nosso formulario, entraremos em contato com você o mais breve possivel.</p>
+                    <p>Preencha o nosso formulario, entraremos em contato com você o mais breve possivel.</p>
 
 
                     <form>
