@@ -29,6 +29,7 @@ function useForm(valueInit) {
             body: JSON.stringify(dataForm),
         })     
         .then(async (dataServer) => {
+            console.log(dataServer);
             if (dataServer.ok) {                
                 history.push('/formulario/sucesso/');
                 clearForm();
