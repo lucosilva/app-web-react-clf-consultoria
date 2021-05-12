@@ -20,8 +20,8 @@ function useForm(valueInit) {
     function handleSend() {
 
         toast('Estamos recebendos os seus dados.....',{autoClose: 8000});
-        
-        fetch(process.env.END_POINT, {
+        // process.env.END_POINT
+        fetch('https://form-send-email.herokuapp.com/data/form/', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
