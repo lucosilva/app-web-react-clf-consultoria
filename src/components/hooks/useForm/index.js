@@ -18,10 +18,10 @@ function useForm(valueInit) {
     }
 
     function handleSend() {
-
+        const API_URL = "https://form-send-email.herokuapp.com/data/form/";
         toast('Estamos recebendos os seus dados.....',{autoClose: 8000});
 
-        fetch(process.env.API_URL, {
+        fetch(API_URL, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
