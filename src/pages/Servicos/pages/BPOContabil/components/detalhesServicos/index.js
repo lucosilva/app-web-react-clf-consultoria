@@ -9,8 +9,7 @@ function Detalhes() {
             imagem={imgMain}
             hastag='#BPONaCLF'
             title='Contábil'
-            description='Terceirizamos as rotinas contábil de forma total, ou de processos
-            específicos.'
+            description='Executamos todos os serviços contábeis, desde a classificação dos documentos, até relatórios finais e entrega de obrigações acessórias.'
             button='off'
         />
     );

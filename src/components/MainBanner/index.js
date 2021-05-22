@@ -24,7 +24,10 @@ function MainBanner() {
                     </div>
                 </div>
 
-                <Social facebook="#" instagram="#" linkedin="" />
+                <Social 
+                    facebook="https://www.facebook.com/clf.consultoriatributaria" 
+                    instagram="https://www.instagram.com/clf.consultoriatributaria/" 
+                    linkedin="https://www.linkedin.com/in/clfconsultoriafiscal-clf-35637020b/" />
                 <ArrowScroll direction='left' />
             </div>
         </section>

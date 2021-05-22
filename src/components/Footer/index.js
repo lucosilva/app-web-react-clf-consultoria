@@ -49,8 +49,9 @@ function Footer() {
                             </div>
                             <ul>
                                 <li>Fique à vontade para entrar em contato conosco por telefone ou enviar mensagem.</li>
-                                <li><a href='tel:1128689751'>(11) 2868-9751</a></li>
-                                <li><a href='mailto:faleconosco@clf.com?subject=gostaria de solicitar um orçamento'>faleconosco@clf.com</a></li>
+                                <li><a href='tel:1123381893'>(11) 2338-1893</a></li>
+                                <li><a href='tel:964674634'>(11) 9 6467-4634</a></li>
+                                <li><a href='mailto:contato@clf.srv.br?subject=gostaria de solicitar um orçamento'>contato@clf.srv.br</a></li>
                             </ul>
                         </div>                
                     </nav>
@@ -58,7 +59,11 @@ function Footer() {
                 <div className="container-bottom">
                     <span>©clf 2021, todos os direitos reservados.</span>
 
-                    <Social facebook="#" instagram="#" linkedin="" />
+                    <Social 
+                    facebook="https://www.facebook.com/clf.consultoriatributaria" 
+                    instagram="https://www.instagram.com/clf.consultoriatributaria/" 
+                    linkedin="https://www.linkedin.com/in/clfconsultoriafiscal-clf-35637020b/" />
+
                 </div>
             </div>
         </footer>

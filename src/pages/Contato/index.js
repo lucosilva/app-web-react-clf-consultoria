@@ -4,7 +4,7 @@ import MainBanner from '../../components/BannerLevelTree';
 import Contrate from '../../components/Contrate';
 import InfoContato from './Components/InfoContato';
 import InfoLocation from './Components/InfoLocation';
-import Faq from './Components/FaqContato';
+// import Faq from './Components/FaqContato';
 
 function Contato(){
     return(
@@ -13,7 +13,7 @@ function Contato(){
             <InfoContato />
             <InfoLocation />
             <Contrate />
-            <Faq/>
+            {/* <Faq/> */}
         </DefaulComponents>
     );
 }

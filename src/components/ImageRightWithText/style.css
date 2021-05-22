@@ -19,11 +19,10 @@
 
 .container-imageRight-with-text .container .container-img .destaque{
     position: relative;
-    width: 100%;
-    height: 100%;
-
+    width: 90%;
+    height: 90%;
     border-radius: 13px;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .container-imageRight-with-text .container .container-img .detalheUp{
@@ -32,10 +31,10 @@
 }
 .container-imageRight-with-text .container .container-img .detalheUp img{
     position: absolute;
-    width: 159px;
-    height: 192px;
-    left: -55px;
-    top: -495px;
+    width: 135px;
+    height: 175px;
+    left: -30px;
+    top: -440px;
 }
 
 .container-imageRight-with-text .container .container-img .detalheDown{
@@ -44,10 +43,10 @@
 }
 .container-imageRight-with-text .container .container-img .detalheDown img{
     position: absolute;
-    width: 159px;
-    height: 192px;
-    right: -55px;
-    top: 305px;
+    width: 135px;
+    height: 175px;
+    right: 33px;
+    top: 270px;
 }
 
 .container-imageRight-with-text .container .context{
@@ -93,7 +92,7 @@
 
 .container-imageRight-with-text .container .context a{
     width: 200px;
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 400;
     color: var(--color5);
 
@@ -102,7 +101,7 @@
 }
 
 .container-imageRight-with-text .container .context a svg{
-    font-size: 30px;
+    font-size: 24px;
     margin-left: 20px;
 }
 .container-imageRight-with-text .container .context a:hover{
@@ -128,7 +127,7 @@
         right: -23px;
     }
     .container-imageRight-with-text .container .context a{
-        font-size: 22px;
+        font-size: 19px;
     }
 }
 
@@ -186,8 +185,10 @@
         justify-content: center;
     }
     .container-imageRight-with-text .container .context a svg {
-        font-size: 30px !important;
         margin-left: 0 !important;
         margin-right: 20px !important;
+    }
+    .container-imageRight-with-text .container .container-img .destaque{
+        width: 100%;
     }
 }

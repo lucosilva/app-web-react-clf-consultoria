@@ -8,8 +8,8 @@ function Detalhes() {
         <ImageLeftWithText 
             imagem={imgMain}
             hastag='#CLFsemburocracia'
-            title='regularização do seu negócio'
-            description='texto descritivo sobre o serviço'
+            title='Regularização do seu negócio'
+            description='Oferecemos serviços que facilitam o dia a dia do empresário e que lidam com todos os processos necessários para manter sua empresa funcionando'
             button='off'
             bg="bg-white"
         />

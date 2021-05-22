@@ -31,9 +31,9 @@
 .wording .wording-body .container > div p{
     width: 50%;
     margin-bottom: 0;
-    font-size: 26px;
+    font-size: 19px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 33px;
     color: var(--color3);
 }
 
@@ -95,9 +95,9 @@
 .theJourney .theJourney-body .container > div p{
     width: 100%;
     margin-bottom: 30px;
-    font-size: 26px;
+    font-size: 19px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 33px;
     color: var(--color3);
 }
 

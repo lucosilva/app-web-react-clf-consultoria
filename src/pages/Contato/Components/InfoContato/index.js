@@ -10,10 +10,10 @@ function Detalhes() {
             hastag='#FaleConosco'
             title='Atendimento ao cliente.'
 
-            telNumber='(11) 2868-9751'
-            telObs='Capitais e regiões metropolitanas de SP'
+            telNumber='(11) 2338-1893 | (11) 9 6467-4634'
+            // telObs=''
 
-            mail='faleconosmo@clf.com'
+            mail='contato@clf.srv.br'
         />
     );
 }

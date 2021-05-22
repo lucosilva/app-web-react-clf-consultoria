@@ -49,7 +49,6 @@ function MenuMobile() {
                                     <Link to="/historia/">Quem Somos</Link>
                                     {/* eslint-disable-next-line  */}
                                     <a href="http://consultoriatributariaefiscal.blogspot.com/" target="_blank">Blog</a>
-                                    <Link to="/duvidas/">Dúvidas</Link>
                                 </div>
                             </div>
                         </div>

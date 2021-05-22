@@ -9,8 +9,7 @@ function Detalhes() {
             imagem={imgMain}
             hastag='#BPONaCLF'
             title='Fiscal'
-            description='Terceirizamos as rotinas fiscais de forma total, ou de processos
-            específicos, como por exemplo: apuração e obrigações acessórias.'
+            description='Executamos toda a rotina do departamento fiscal, desde a classificação das notas fiscais até a apuração dos impostos.'
             button='off'
             bg="bg-white"
         />

@@ -4,7 +4,7 @@ import Default from '../../../../components/DefaultComponents';
 import MainBanner from '../../../../components/BannerLevelTwo';
 import Detalhesservicos from './components/detalhesServicos';
 import Contrate from '../../../../components/Contrate';
-import Faq from './components/FaqBPOContabil';
+// import Faq from './components/FaqBPOContabil';
 import ListServices from './components/ServicosCardList';
 
 function BPOContabil() {
@@ -19,7 +19,7 @@ function BPOContabil() {
             <Detalhesservicos />
             <ListServices />
             <Contrate />
-            <Faq />
+            {/* <Faq /> */}
         </Default>
     );
 }

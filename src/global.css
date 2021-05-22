@@ -27,6 +27,9 @@ a {
   color: inherit;
 } 
 
+form{
+  z-index: 0;
+}
 
 .MenuMobile .accordion{
   margin: 0 !important;
@@ -34,10 +37,10 @@ a {
 
 @media (max-width: 576) {
   .container-image-with-text .container .context a svg{
-    font-size: 22px;
+    font-size: 24px;
   }
   .container-image-with-text .container .context a{
-    font-size: 22px;
+    font-size: 19px;
   }
   
 }

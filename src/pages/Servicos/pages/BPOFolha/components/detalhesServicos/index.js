@@ -9,8 +9,7 @@ function Detalhes() {
             imagem={imgMain}
             hastag='#BPONaCLF'
             title='Folha'
-            description='Terceirizamos as rotinas de dpto. pessoal de forma total, ou de processos
-            específicos.'
+            description='Orientamos e atuamos em todos o processo da administração de pessoal, sempre com base nas legislações vigentes.'
             button='off'
             bg="bg-white"
         />

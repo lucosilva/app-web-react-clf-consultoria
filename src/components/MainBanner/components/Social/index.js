@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 import './style.css';
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -10,15 +8,15 @@ function Social(props) {
 
     return (
         <div className="social-container">
-            <Link to={props.facebook}>
+            <a target="_blank" rel="noreferrer" href={props.facebook}>
                 <FaFacebookF />
-            </Link>
-            <Link to={props.instagram}>
+            </a>
+            <a target="_blank" rel="noreferrer" href={props.instagram}>
                 <FaInstagram />
-            </Link>
-            <Link to={props.linkedin}>
+            </a>
+            <a target="_blank" rel="noreferrer" href={props.linkedin}>
                 <FaLinkedinIn />
-            </Link>
+            </a>
         </div>
     )
 }

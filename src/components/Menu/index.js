@@ -60,8 +60,7 @@ function Menu() {
                         titleMenu='Um pouco sobre nós'>
                             {[
                                 { titulo: 'Quem Somos', url: '/historia/' },
-                                { titulo: 'Blog', externalLink:'true', url:'http://consultoriatributariaefiscal.blogspot.com/' },
-                                { titulo: 'Dúvidas', url: '/duvidas/' }
+                                { titulo: 'Blog', externalLink:'true', url:'http://consultoriatributariaefiscal.blogspot.com/' }
                             ]}
                         </ ButtonItemMenu>
 

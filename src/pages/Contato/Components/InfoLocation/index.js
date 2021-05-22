@@ -9,10 +9,8 @@ function Detalhes() {
             imagem={imgMain}
             hastag='#NosLocalize'
             title='Onde nos encontrar ?'
-            description='Avenida Aricanduva, Aricanduva, 5555 São Paulo - SP, 03527-900'
-            button='on'
-            buttonUrl='#'
-            cta='Abrir no Maps'
+            description='Rua Victório Santim, 2381, conjunto 11, Itaquera - SP, 08290-001'
+            button='off'
         />
     );
 }

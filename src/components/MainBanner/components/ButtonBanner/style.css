@@ -47,7 +47,11 @@
     font-size: 20px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
+
+    .buttonNone{
+        display: none;
+    }
     .buttonBanner{
         width: 100%;
         margin-right: 0;

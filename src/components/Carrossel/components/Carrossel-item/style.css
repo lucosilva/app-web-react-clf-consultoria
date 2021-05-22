@@ -23,14 +23,14 @@
 
 .ItemCarrossel h3{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 22px;
     color: var(--color4);
 }
 
 .ItemCarrossel p{
     width: 80%;
-    font-size: 19px;
+    font-size: 14px;
     font-weight: 400;
     color: var(--color3);
 
@@ -94,7 +94,7 @@
     }
     
     .ItemCarrossel h3{
-        font-size: 19px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
     

@@ -36,9 +36,21 @@ function Historia() {
                                 </p>
                                 <p>
                                     Observando essa dificuldades enfrentadas pelas empresas é que surgiu a CLF Consultoria Fiscal e Tributária.
-                                    <br />
-                                    <br />
-                                    Somos uma empresa focada na prestação de serviços relacionados a área fiscal e tributária, especializada em impostos indiretos.
+                                    <br />                                   
+                                </p>
+                            </div>
+                        </div>
+                        <div className="container">
+                        <br />
+                        <br />
+                            <h3>Quem Somos </h3>
+                            <div>
+                                <p>
+                                    Somos uma empresa de consultoria, que trabalha focada na qualidade de atendimento e no relacionamento com os nossos clientes, mesmo os clientes pequenos são tratados como grandes.
+                                </p>
+                                <p>
+                                    Oferecemos assessoria e auxilio integral na resolução de quaisquer assuntos fiscais ou tributários que possam surgir, contribuindo assim, diariamente, para o seu sucesso, visando sempre fortalecer a confiança e a satisfação de nossos clientes.
+                                    <br />                                   
                                 </p>
                             </div>
                         </div>
@@ -92,8 +104,8 @@ function Historia() {
                                     </div>
                                     <div className="description">
                                         <h4>Janaina Correia da Silva</h4>
-                                        <span>Founder & CEO</span>
-                                        <Social />
+                                        <span>Fundadora & CEO</span>
+                                        <Social facebook="https://www.facebook.com/janaina.correia.733/" instagram="https://www.instagram.com/correia.janaina.correia/" linkedin="https://www.linkedin.com/in/janaina-correia-b334a8136/" />
                                     </div>
                                 </div>
                             </div>
@@ -124,8 +136,8 @@ function Historia() {
                                     </div>
                                     <div className="description">
                                         <h4>Cosmo Luiz de França</h4>
-                                        <span>Business partner</span>
-                                        <Social />
+                                        <span>Sócio</span>
+                                        <Social facebook="https://www.facebook.com/cosmo.l.franca/" instagram="https://www.instagram.com/cosmoluiz/" linkedin="https://www.linkedin.com/in/cosmo-luiz-fran%C3%A7a-034b50132/"/>
                                     </div>
                                 </div>
                             </div>

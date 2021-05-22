@@ -19,11 +19,10 @@
 
 .container-image-with-text .container .container-img .destaque{
     position: relative;
-    width: 100%;
-    height: 100%;
-
+    width: 90%;
+    height: 90%;
     border-radius: 13px;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .container-image-with-text .container .container-img .detalheUp{
@@ -32,10 +31,10 @@
 }
 .container-image-with-text .container .container-img .detalheUp img{
     position: absolute;
-    width: 159px;
-    height: 192px;
-    left: -55px;
-    top: -495px;
+    width: 135px;
+    height: 175px;
+    left: -30px;
+    top: -440px;
 }
 
 .container-image-with-text .container .container-img .detalheDown{
@@ -44,10 +43,10 @@
 }
 .container-image-with-text .container .container-img .detalheDown img{
     position: absolute;
-    width: 159px;
-    height: 192px;
-    right: -55px;
-    top: 305px;
+    width: 135px;
+    height: 175px;
+    right: 33px;
+    top: 270px;
 }
 
 .container-image-with-text .container .context{
@@ -83,7 +82,7 @@
 }
 
 .container-image-with-text .container .context p{
-    width: 60%;
+    width: 80%;
     font-size: 19px;
     text-align: right;
     line-height: 22px;
@@ -93,7 +92,7 @@
 
 .container-image-with-text .container .context a{
     width: 300px;
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 400;
     color: var(--color5);
 
@@ -102,7 +101,7 @@
 }
 
 .container-image-with-text .container .context a svg{
-    font-size: 30px;
+    font-size: 24px;
     margin-right: 20px;
 }
 .container-image-with-text .container .context a:hover{
@@ -127,7 +126,7 @@
         top: 245px;
     }
     .container-image-with-text .container .context a{
-        font-size: 22px;
+        font-size: 19px;
     }
 }
 
@@ -181,11 +180,14 @@
         width: 100%;
         text-align: center;
     }
+    .container-image-with-text .container .container-img .destaque{
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px){
     .container-image-with-text .container .context a{
-        font-size: 22px;
+        font-size: 19px;
         margin-right: 30px;
     }
 }
