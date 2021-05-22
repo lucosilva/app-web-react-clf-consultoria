@@ -32,7 +32,7 @@ function ImageWithText(props) {
 
                     <p>{props.description}</p>
 
-                    {props.button === 'off' ? null : <Link to={props.buttonUrl}> <FiArrowUpLeft /> {props.cta} </Link>}
+                    {props.button === 'off' ? null : props.button === 'maps' ? <a  rel="noreferrer" target="_blank" href={props.buttonUrl}> <FiArrowUpLeft /> {props.cta} </a> : <Link to={props.buttonUrl}> <FiArrowUpLeft /> {props.cta} </Link>}                    
 
                 </div>
             </div>

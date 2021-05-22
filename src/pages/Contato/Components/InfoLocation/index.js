@@ -7,10 +7,12 @@ function Detalhes() {
     return (
         <ImagelefttWithText
             imagem={imgMain}
-            hastag='#NosLocalize'
+            hastag=''
             title='Onde nos encontrar ?'
-            description='Rua Victório Santim, 2381, conjunto 11, Itaquera - SP, 08290-001'
-            button='off'
+            description='Rua Victório Santim, 2381, conjunto 11, Itaquera - SP, CEP: 08290-001'
+            buttonUrl="https://goo.gl/maps/GcbyaYyjwmJvaAjY9"
+            cta="Abra no mapa"
+            button='maps'
         />
     );
 }
