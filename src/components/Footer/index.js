@@ -40,7 +40,7 @@ function Footer() {
                                 <li><Link to="/historia/">Quem somos</Link></li>
                                 {/* <li><Link to="/parceiros/">Parceiros</Link></li> */}
                                  {/* eslint-disable-next-line */}
-                                <li><a href="http://consultoriatributariaefiscal.blogspot.com/" target="_blank">BLOG</a></li>
+                                <li><a href="http://consultoriatributariaefiscal.blogspot.com/" target="_blank">blog</a></li>
                             </ul>
                         </div>
                         <div className="menuItem contato">
