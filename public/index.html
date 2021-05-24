@@ -8,10 +8,15 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Consultoria Fiscal e Tributária" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYH3N8NDPL"></script>
   <script>
-    console.log(process.env.GTAG);
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MYH3N8NDPL');
   </script>
 
   <!-- Add the slick-theme.css if you want default styling -->
