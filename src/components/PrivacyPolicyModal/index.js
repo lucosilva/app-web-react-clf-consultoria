@@ -8,10 +8,12 @@ function PrivacyPolicyModal(props) {
     const [display, setDisplay] = useState("block");
 
     useEffect(() => {
-        const check = checkCookie("PrivacyPolicy");
+        
+        var check = checkCookie("PrivacyPolicy");
         if (check) {
             setDisplay("none");
         }
+        // eslint-disable-next-line
     }, [])
 
     function closeAction() {
@@ -21,7 +23,7 @@ function PrivacyPolicyModal(props) {
 
     function checkCookie(cname) {
         var username = getCookie(cname);
-        return username != "" ? true : false;
+        return username !== "" ? true : false;
     }
 
     function getCookie(cname) {
@@ -30,18 +32,14 @@ function PrivacyPolicyModal(props) {
         var ca = decodedCookie.split(';');
         for (var i = 0; i < ca.length; i++) {
             var c = ca[i];
-            while (c.charAt(0) == ' ') {
+            while (c.charAt(0) === ' ') {
                 c = c.substring(1);
             }
-            if (c.indexOf(name) == 0) {
+            if (c.indexOf(name) === 0) {
                 return c.substring(name.length, c.length);
             }
         }
         return "";
-    }
-
-    function deleteCookie(cookname) {
-        document.cookie = cookname + "=" + '0' + ";domain=.clf.srv.br;" + 'expires=Thu, 01 Jan 1970 00:00:01 GMT' + ";path=/";
     }
 
     function setCookie(cookname, cookValue) {
