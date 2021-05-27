@@ -47,6 +47,7 @@ function MenuMobile() {
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <Link to="/historia/">Quem Somos</Link>
+                                    <Link to="/privacidade/">Privacidade</Link>
                                     {/* eslint-disable-next-line  */}
                                     <a href="http://consultoriatributariaefiscal.blogspot.com/" target="_blank">Blog</a>
                                 </div>

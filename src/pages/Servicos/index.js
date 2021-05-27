@@ -10,10 +10,12 @@ function Servicos() {
         <Default>
             <MainBanner
                 titulo="Serviços"
-                subtitulo="Confira todos os nosso serviços"                
-                ctaButton="Contrate a CLF" />              
+                subtitulo="Confira todos os nosso serviços"
+                ctaButton="Contrate a CLF" />          
             <ListServicos />
-            <Contrate/>            
+            <Contrate />
+
+
         </Default>
     );
 }

@@ -38,9 +38,9 @@ function Footer() {
                             </div>
                             <ul>
                                 <li><Link to="/historia/">Quem somos</Link></li>
-                                {/* <li><Link to="/parceiros/">Parceiros</Link></li> */}
+                                <li><Link to="/privacidade/">Privacidade</Link></li>
                                  {/* eslint-disable-next-line */}
-                                <li><a href="http://consultoriatributariaefiscal.blogspot.com/" rel="noopener" target="_blank">blog</a></li>
+                                <li><a href="http://consultoriatributariaefiscal.blogspot.com/" rel="noopener" target="_blank">Blog</a></li>
                             </ul>
                         </div>
                         <div className="menuItem contato">

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './style.css';
 import FormItem from './components/formItem';
 import useForm from '../hooks/useForm';
@@ -63,6 +64,8 @@ function Contrate() {
 
                         <input type="text" autoComplete="on" style={{ "display": "none" }} />
                     </form>
+
+                    <p className="alertPolicy">*Enviando os dados, você declara estar ciente com os nossos <Link to="/privacidade/">Termos de Uso e Política de Privacidade</Link>.</p>
 
 
                 </div>

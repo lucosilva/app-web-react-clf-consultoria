@@ -13,6 +13,7 @@ import ProjetosEspecias from './pages/Servicos/pages/projetosEspecias';
 
 import Historia from './pages/Historia';
 import Contato from './pages/Contato';
+import TermosUso from './pages/TermosUso';
 import FormularioSucesso from './pages/Formulario/page/success';
 
 function Routes() {
@@ -29,6 +30,7 @@ function Routes() {
                 <Route path="/servicos/" component={Servicos} />
                 <Route path="/historia/" component={Historia} />
                 <Route path="/contato/" component={Contato} />
+                <Route path="/privacidade/" component={TermosUso} />
                 <Route path="/formulario/sucesso/" component={FormularioSucesso} />
                 
                 <Route component={Page404} />

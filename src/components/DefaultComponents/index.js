@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Menu from '../Menu';
 import Footer from '../Footer';
 import { solutionBackToTop, ButtonBackToTop } from '../BackToTop';
-
+import PrivacyPolicyModal from '../PrivacyPolicyModal';
 
 function Default(props) {
 
@@ -19,12 +19,15 @@ function Default(props) {
 
     }, [])
 
+
     return (
         <>
             <Menu />
             {props.children}
             <ButtonBackToTop />
             <Footer />
+
+            <PrivacyPolicyModal/>
         </>
     );
 }
