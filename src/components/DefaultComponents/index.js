@@ -3,6 +3,7 @@ import Menu from '../Menu';
 import Footer from '../Footer';
 import { solutionBackToTop, ButtonBackToTop } from '../BackToTop';
 import PrivacyPolicyModal from '../PrivacyPolicyModal';
+import Breadcrumb from '../breadcrumb';
 
 function Default(props) {
 
@@ -24,7 +25,8 @@ function Default(props) {
         <>
             <Menu />
             {props.children}
-            <ButtonBackToTop />
+            <Breadcrumb />
+            <ButtonBackToTop />            
             <Footer />
 
             <PrivacyPolicyModal/>
